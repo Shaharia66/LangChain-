@@ -63,5 +63,3 @@ else:
     result = agent.invoke(Command(resume={"decisions": [{"type": "approve"}]}), config)
     print("FINAL:", result["messages"][-1].text)
     print("   run still waiting:", bool(agent.get_state(config).next))
-
-    

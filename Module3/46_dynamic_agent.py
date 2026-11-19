@@ -103,5 +103,3 @@ for question, ctx in tests:
     meta = result["messages"][-1].response_metadata
     print("   answered by:", meta.get("model_name", "?"))
     print("   ANSWER:", result["messages"][-1].text)
-
-    
